@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePageStyles.css">
+    <script src="homePageScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>VhoTel</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Call Info -->
+        <div class="call-etc">
+            <div class="call-content">
+                <ion-icon class="phone" name="call"></ion-icon>
+                <h5>+62 810 5678 1234</h5>
+            </div>
+            <div class="language">
+                <h5>ID - EN</h5>
+                <div class="lang-line"></div>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div id="nav-bar" class="navigation-bar">
+            <div class="nav-content">
+                <h1 class="nav-logo">VhoTel</h1>
+                <div class="nav-info">
+                    <button onclick="">HOME</button>
+                    <button onclick="document.location='../Suites Page/suitesPage.html'">SUITES</button>
+                    <button onclick="document.location='../Facilities Page/facilitiesPage.html'">FACILITIES</button>
+                    <button onclick="document.location='../About Us Page/aboutUsPage.html'">ABOUT US</button>
+                    <button onclick="document.location='../Reserve Page/reservePage.html'">RESERVATION</button>
+                </div>
+            </div>
+        </div>
+        <!-- Header Background -->
+        <div class="header-content">
+            <img src="Home Images/View.jpg" draggable="false">
+        </div>
+        <h5 class="location">17, SESAME STREET, CENTRAL JAKARTA</h5>
+        <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
+    </div>
+
+    <!-- Top View -->
+    <div class="top-view">
+        <div class="top-content">
+            <div class="top-paragraph">
+                <h2>EXPERIENCE TRUE PERFECTION</h2>
+                <p>
+                    Welcome to VhoTel, where comfort and luxury meet to create an unforgettable 
+                    stay. Situated in the heart of the vibrant Jakarta city, our hotel is a haven for both 
+                    business and leisure travelers seeking an exceptional experience. 
+                    Immerse yourself in our stylish and subtle ambiance, adorned with exquisite 
+                    decoration and thoughtfully curated amenities.
+                </p>
+            </div>
+            <div class="sorted-view">
+                <button id="left-sorted"  onclick="sortedLeft()"><ion-icon class="sorted-arrow" name="chevron-back-outline"></ion-icon></button>
+                <div class="sorted-border">
+                    <div id="sorted-move" class="view-list">
+                        <div class="sorted-content">
+                            <img src="Home Images/sorted1.jpg" draggable="false">
+                            <div class="sorted-text">
+                                <h4>FOR THE CURIOUS</h4>
+                                <p>
+                                    A new chapter has been waiting for you in VhoTel. We invite you to experience this luxurious
+                                    playground to discover the newly reimagined spaces
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sorted-content">
+                            <img src="Home Images/sorted2.jpg" draggable="false">
+                            <div class="sorted-text">
+                                <h4>EXQUISITE ELEGANCE</h4>
+                                <p>
+                                    Indulging in the opulence of a grand hotel is an experience that transcends the ordinary. 
+                                    Imagine waking up greeted by the warm glow of crystal chandeliers as they reflect off the 
+                                    exquisite furnishings. Every aspect of your stay provide an unparalleled level of luxury.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sorted-content">
+                            <img src="Home Images/sorted3.jpg" draggable="false">
+                            <div class="sorted-text">
+                                <h4>LAVISH LIFESTYLE</h4>
+                                <p>
+                                    Stepping into the lavishness of a luxurious hotel, you are enveloped in an atmosphere of refined sophistication. 
+                                    Each suite is a masterpiece of design, boasting plush carpets, tastefully selected artwork, and floor-to-ceiling 
+                                    windows offering breathtaking views. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sorted-content">
+                            <img src="Home Images/sorted4.jpg" draggable="false">
+                            <div class="sorted-text">
+                                <h4>ENCHANTING NIGHTLIFE</h4>
+                                <p>
+                                    Captivating night bar nestled within the confines of the prestigious hotel. As dusk descends, 
+                                    this glamorous haven comes alive, exuding an alluring charm that entices discerning patrons seeking an 
+                                    extraordinary evening of revelry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sorted-content">
+                            <img src="Home Images/sorted5.jpg" draggable="false">
+                            <div class="sorted-text">
+                                <h4>GASTRONOMIC DELIGHTS</h4>
+                                <p>
+                                    Enchance your senses in a culinary journey like no other at our exceptional dining venues. 
+                                    Nestled within opulent surroundings, our award-winning restaurants offer an unforgettable gastronomic 
+                                    experience that will tantalize your taste buds and leave you craving for more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="right-sorted" onclick="sortedRight()"><ion-icon class="sorted-arrow" name="chevron-forward-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle View -->
+    <div class="middle-view">
+        <div class="middle-content">
+            <div class="middle-promo">
+                <div class="promo-frame">
+                    <img id="promo-img" src="Home Images/middle-promo.jpg" draggable="false">
+                </div>
+                <div class="promo-text">
+                    <h3>UNVEILING OUR EXCLUSIVE SUITE</h3>
+                    <div class="promo-line"></div>
+                    <p>
+                        Escape into a realm of unparalleled luxury and extravagance with our esteemed hotel's 
+                        latest offering. Find out more about our breathtaking suites.
+                    </p>
+                    <button 
+                    onclick="document.location='../Suites Page/suitesPage.html'"
+                    onmouseleave="scaleM()" 
+                    onmouseover="scaleM()"
+                    >
+                    Explore
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom View -->
+    <div class="bottom-view">
+        <h3>VHOTEL FINESSES</h3>
+        <div class="bottom-content">
+            <div class="bl-frame">
+                <img id="bg-l" src="Home Images/bImg1.jpg" draggable="false">
+            </div>
+            <div class="bottom-right">
+                <div class="br-frame">
+                    <img id="bg-r" src="Home Images/bImg2.jpg" draggable="false">
+                </div>
+                <div class="br-text">
+                    <p>
+                        Unwind, rejuvenate, and create treasured memories here, where 
+                        every detail is designed with your utmost satisfaction in mind. Find out what
+                        our grand hotel have for you.
+                    </p>
+                    <button 
+                    onclick="document.location='../Facilities Page/facilitiesPage.html'" 
+                    onmouseleave="scaleB()" 
+                    onmouseover="scaleB()"
+                    >
+                    Explore
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1>VhoTel</h1>
+                <h5>CENTRAL JAKARTA</h5>
+            </div>
+            <div class="footer-middle">
+                <div class="f-top">
+                    <h5>MORE INFO</h5>
+                    <p>EMAIL : office@vhotel.com</p>
+                    <p>INSTAGRAM : @vhotelofficial</p>
+                </div>
+                <div class="f-bottom">
+                    <h5>HOTEL AND FACILITIES</h5>
+                    <p>EMAIL : reseption@vhotel.com</p>
+                    <p>CONTACT : +62 810 5678 1234</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="f-top">
+                    <h5>EVENT</h5>
+                    <p>EMAIL : event@vhotel.com</p>
+                    <p>CONTACT : +62 810 7772 3414</p>
+                </div>
+                <div class="f-bottom">
+                    <h5>PRESS</h5>
+                    <p>EMAIL : press@vhotel.com</p>
+                    <p>CONTACT : +62 810 1238 9264</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</html>

@@ -1,0 +1,659 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #808080;
+}
+
+h1{font-size: 30px;}
+h2{font-size: 26px;}
+h3{font-size: 22px;}
+h4{font-size: 18px;}
+h5{font-size: 16px;}
+p{font-size: 14px;}
+button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+/* -------------------------------------------------------------Navigation-------------------------------------------------------------*/
+.navigation-bar{
+    width: 100%;
+    height: 8%;
+    z-index: 20;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.nav-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+
+.nav-logo{
+    margin: 0 0 0 6%;
+    font-weight: 500;
+}
+
+.nav-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right:3%;
+}
+
+.nav-info button{
+    width: 15%;
+    height: 100%;
+    font-weight: 400;
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.nav-info button:hover{
+    background-color: #b1A296;
+}
+
+.scrolled-nav{
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+/* -------------------------------------------------------------Header-------------------------------------------------------------*/
+
+.header{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: black;
+}
+.header-content{
+    width: 94%;
+    height: 88%;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    right: 3%;
+    bottom: 6%;
+    z-index: 10;
+}
+.header-content img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+/* Call and Other Info */
+.call-etc{
+    width: 94%;
+    height: 6%;
+    display: flex;
+    justify-content: end;
+    margin: 0 3%;
+}
+.call-content{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: none;
+    color: white;
+}
+
+.phone{
+    width: 3%;
+    height: 60%;
+    margin: 0 1% 0 0;
+}
+
+.call-content h5{
+    font-weight: 400;
+    margin: 0;
+}
+
+.language{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: none;
+    color: white;
+}
+
+.language h5{
+    margin: 0 12% 0 0;
+    font-weight: 400;
+}
+.lang-line{
+    width: 15%;
+    height: 4%;
+    margin: 0 3% 0 0;
+    background-color: white;
+}
+
+/* Location */
+.location{
+    width: 94%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 3%;
+    bottom: 0%;
+    z-index: 15;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+
+}
+
+/* Arrow */
+.arrow{
+    width: 3%;
+    height: 6%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,-20%);
+    z-index: 15;
+    margin: 0;
+    color: white;
+    opacity: 0.6;
+    animation: floating 3s ease infinite;
+}
+
+@keyframes floating{
+    0%,100%{
+      transform: translate(-50%, -20%);
+    }
+    50%{
+      transform: translate(-50%, 0%);
+    }
+}
+
+/* -------------------------------------------------------------Top View-------------------------------------------------------------*/
+.top-view{
+    width: 100%;
+    height: 130%;
+    margin: 0;
+}
+
+.top-content{
+    width: 94%;
+    height: 100%;
+    margin: 0 3%;
+}
+
+.top-paragraph{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-paragraph h2{
+    font-weight: 500;
+    margin: 0 0 2% 0;
+}
+
+.top-paragraph p{
+    width: 62%;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Sorted View */
+.sorted-view{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorted-border{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.view-list{
+    width: 169.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sorted-content{
+    width: 20%;
+    height: 100%;
+    margin: 0 1% 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sorted-content img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.sorted-text{
+    width: 90%;
+    height: 50%;
+}
+
+.sorted-text h4{
+    margin: 2% 0;
+    font-weight: 500;
+}
+
+.sorted-text p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.sorted-view button{
+    width: 3.5%;
+    height: 7%;
+    padding: 0;
+    border: solid;
+    border-color: #2f2f32;
+    background-color: white;
+    border-width: 1px;
+    position: absolute;
+    cursor: pointer;
+}
+#left-sorted{
+    left: 3%;
+    display: none;
+}
+
+#right-sorted{
+    right: 3%;
+}
+
+.sorted-arrow{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* -------------------------------------------------------------Middle View-------------------------------------------------------------*/
+.middle-view{
+    width: 100%;
+    height: 100%;
+    margin: 6% 0 15% 0;
+}
+
+.middle-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-image: url("Home\ Images/middle-background.jpg");
+    background-size: cover;
+
+}
+
+.middle-promo{
+    width: 88%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.promo-frame{
+    width: 47%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+.middle-promo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-out;
+}
+
+.promo-text{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3%;
+}
+
+.promo-text h3{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.promo-line{
+    width: 20%;
+    height: 0.3%;
+    margin: 5% 0;
+    background-color: black;
+}
+
+.promo-text p{
+    width: 80%;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+
+.promo-text button{
+    width: 30%;
+    height: 8%;
+    margin-top: 5%;
+    font-weight: 500;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.promo-text button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* -------------------------------------------------------------Bottom View-------------------------------------------------------------*/
+.bottom-view{
+    width: 100%;
+    height: 95%;
+    margin: 0;
+}
+
+.bottom-view h3{
+    width: 60%;
+    height: 1%;
+    position: relative;
+    left: 9%;
+    bottom: 9%;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bottom-content{
+    width: 82%;
+    height: 99%;
+    margin: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl-frame{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bl-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.bottom-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    bottom: 9%;
+}
+
+.br-frame{
+    width: 65%;
+    height: 70%;
+    overflow: hidden;
+}
+.br-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.br-text{
+    width: 65%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.br-text p{
+    margin: 5% 0 0 0;
+    font-weight: 400;
+}
+
+.br-text button{
+    width: 43.5%;
+    height: 20%;
+    position: relative;
+    top: 10%;
+    font-weight: 500;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.br-text button:hover{
+    background-color: black;
+    color: white;
+}
+
+.scaling{transform: scale(1.1);}
+
+/* -------------------------------------------------------------Footer-------------------------------------------------------------*/
+.footer{
+    width: 100%;
+    height: 40%;
+    margin: 18% 0 0 0;
+    background-color: black;
+}
+
+.footer-content{
+    width: 91%;
+    height: 100%;
+    margin: 0 3% 0 6%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-left, .footer-middle, .footer-right{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer h1, .footer h5{
+    margin: 0;
+    font-weight: 500;
+}
+
+.footer p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.f-top{
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    h1{font-size: 26px;}
+    h2{font-size: 22px;}
+    h3{font-size: 18px;}
+    h4{font-size: 14px;}
+    h5{font-size: 12px;}
+    p{font-size: 11px;}
+    button{font-size: 11px;}
+
+    /* -------------------------------------------------------------Top View-------------------------------------------------------------*/
+    .top-view{
+        height: 90%;
+    }
+    .sorted-view button{
+        height: 4%;
+    }
+
+    /* -------------------------------------------------------------Middle View-------------------------------------------------------------*/
+    .middle-view{
+        height: 80%;
+    }
+
+    /* -------------------------------------------------------------Bottom View-------------------------------------------------------------*/
+    .bottom-view{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:767px){
+    h1{font-size: 22px;}
+    h2{font-size: 18px;}
+    h3{font-size: 14px;}
+    h4{font-size: 10px;}
+    h5{font-size: 8px;}
+    p{font-size: 7px;}
+    button{font-size: 7px;}
+
+    /* -------------------------------------------------------------Navigation-------------------------------------------------------------*/
+    .call-etc{
+        height: 10%;
+    }
+    .nav-logo{
+        font-size: 20px;
+    }
+    .navigation-bar{
+        height: 5%;
+    }
+    
+    .nav-info button{
+        width: 19.5%
+    }
+    /* -------------------------------------------------------------Header-------------------------------------------------------------*/
+    .header{
+        height: 60%;
+    }
+    .header-content{
+        height: 48%;
+    }
+    .location,.arrow{
+        bottom: 40%;
+    }
+    /* -------------------------------------------------------------Top View-------------------------------------------------------------*/
+    .top-view{
+        height: 60%;
+    }
+
+    .top-content{
+        height: 100%;
+    }
+
+    .top-paragraph{
+        height: 50%;
+    }
+
+    .sorted-view{
+        height: 50%;
+    }
+
+    .sorted-content img{
+        height: 60%;
+    }
+    
+    .sorted-text{
+        height: 40%;
+    }
+
+    .sorted-text h4{
+        text-align: center;
+    }
+
+    .sorted-text p{
+        display: none;
+    }
+
+    .sorted-view button{
+        width: 2.5%;
+        height: 2%;
+    }
+
+    /* -------------------------------------------------------------Middle View-------------------------------------------------------------*/
+    .middle-view{
+        height: 40%;
+        margin: 6% 0 20% 0;
+    }
+
+    /* -------------------------------------------------------------Bottom View-------------------------------------------------------------*/
+    .bottom-view{
+        height: 40%;
+    }
+
+    /* -------------------------------------------------------------Footer-------------------------------------------------------------*/
+    .footer{
+        height: 20%;
+    }
+}

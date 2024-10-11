@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suitesStyles.css">
+    <script src="suitesScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>VhoTel</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="invisible-head"></div>
+        <div id="nav-bar" class="navigation-bar">
+            <div class="nav-content">
+                <h1 class="nav-logo">VhoTel</h1>
+                <div class="nav-info">
+                    <button onclick="document.location='../Home Page/homePage.html'">HOME</button>
+                    <button onclick="">SUITES</button>
+                    <button onclick="document.location='../Facilities Page/facilitiesPage.html'">FACILITIES</button>
+                    <button onclick="document.location='../About Us Page/aboutUsPage.html'">ABOUT US</button>
+                    <button onclick="document.location='../Reserve Page/reservePage.html'">RESERVATION</button>
+                </div>
+            </div>
+        </div>
+        <img src="Suites Images/View4.jpg" draggable="false">
+        <!-- Header Background -->
+        <div class="header-content">
+            <h1>SUITES</h1>
+            <h5>
+                Each suite is a masterpiece of design, meticulously crafted to provide the epitome of comfort, 
+                elegance, and sophistication. The spaciousness of our suites awaits you. Immerse yourself in the plush surroundings, 
+                adorned with sumptuous furnishings, exquisite artwork, and intricate detailing.
+            </h5>
+        </div>
+        <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
+    </div>
+    
+    <!-- Suites Opening -->
+    <div class="opening">
+        <h2>PREPARE TO BE CAPTIVATED</h2>
+        <p>
+            As you step into your private sanctuary, where impeccable craftsmanship and elegant 
+            aesthetics converge. Each suite is a masterpiece of design, adorned with lavish furnishings, 
+            intricate details, and a harmonious blend of contemporary elegance and timeless charm.
+            As a guest of our suites, you'll enjoy a host of exclusive privileges and personalized 
+            service. From dedicated concierge assistance to access to private lounges and bespoke experiences 
+            tailored to your desires, every aspect of your stay is designed to exceed your expectations and 
+            leave an indelible impression.<br><br>Unveil a world of grandeur and embrace the epitome of luxury 
+            in our suites. Whether you seek a romantic escape, a family retreat, or a sophisticated haven for 
+            business, our suites offer an experience that is beyond compare. Elevate your stay and create 
+            cherished memories that will linger long after your departure, as you immerse yourself in the 
+            realm of unforgettable luxury within our prestigious hotel.
+        </p>
+    </div>
+
+    <!-- Danse Pacifique -->
+    <div class="danseP">
+        <div class="danseP-content">
+            <div class="danseP-pic">
+                <img 
+                id="s-img1"
+                onmouseleave="scale1()" 
+                onmouseover="scale1()"
+                src="Suites Images/simg1.jpg" draggable="false">
+            </div>
+            <div class="danseP-info">
+                <div class="danseP-text">
+                    <h3>DANSE PACIFIQUE</h3>
+                    <p>
+                        Enter a timeless universe. Dive into the plush universe of an Asian boudoir. 
+                        Noble materials of opium houses, camellia carpet and an open bathroom adorned 
+                        with shades of beige.
+                    </p>
+                </div>
+                <div class="suites-table">
+                    <div class="table-top">
+                        <div class="table-spesific">
+                            <h3>Rp.3,500,000</h3>
+                        </div>
+                        <button onclick="document.location='../Reserve Page/reservePage.html'">Reserve</button>
+                    </div>
+                    <div class="table-bottom">
+                        <h3>&#10004; King sized bed</h3>
+                        <h3>&#10004; Optimal crib</h3>
+                        <h3>&#10004; Great Wifi</h3>
+                        <h3>&#10004; Bathtub</h3>
+                        <h3>&#10004; AC</h3>
+                        <h3>&#10004; Large size TV</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Les Folies -->
+    <div class="lesF">
+        <div class="lesF-content">
+            <div class="lesF-info">
+                <div class="lesF-text">
+                    <h3>LES FOLIES</h3>
+                    <p>
+                        This is the hotel's nest. This Suite is accessed by a private staircase, 
+                        to discover a loft, with a large glass roof offering a beautiful view of the city 
+                        of Jakarta.
+                    </p>
+                </div>
+                <div class="suites-table">
+                    <div class="table-top">
+                        <div class="table-spesific">
+                            <h3>Rp.4,700,000</h3>
+                        </div>
+                        <button onclick="document.location='../Reserve Page/reservePage.html'">Reserve</button>
+                    </div>
+                    <div class="table-bottom">
+                        <h3>&#10004; King sized bed</h3>
+                        <h3>&#10004; Wide balcony</h3>
+                        <h3>&#10004; Great Wifi</h3>
+                        <h3>&#10004; Bathtub</h3>
+                        <h3>&#10004; AC</h3>
+                        <h3>&#10004; Large Fridge</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="lesF-pic">
+                <img 
+                id="s-img2"
+                onmouseleave="scale2()" 
+                onmouseover="scale2()"
+                src="Suites Images/simg2.jpg" draggable="false">
+            </div>
+        </div>
+    </div>
+
+    <!-- Grand Tralala -->
+    <div class="grandT">
+        <div class="grandT-content">
+            <div class="grandT-pic">
+                <img 
+                id="s-img3"
+                onmouseleave="scale3()" 
+                onmouseover="scale3()"
+                src="Suites Images/simg3.jpg" draggable="false">
+            </div>
+            <div class="grandT-info">
+                <div class="grandT-text">
+                    <h3>GRAND TRALALA</h3>
+                    <p>
+                        Discover a 100 % carmine world,  
+                        a reminder of the old times with a living room straight from 
+                        beautiful countryside houses. Its luminous bathroom with a view of our 
+                        gardens won't leave you indifferent.
+                    </p>
+                </div>
+                <div class="suites-table">
+                    <div class="table-top">
+                        <div class="table-spesific">
+                            <h3>Rp.3,250,000</h3>
+                        </div>
+                        <button onclick="document.location='../Reserve Page/reservePage.html'">Reserve</button>
+                    </div>
+                    <div class="table-bottom">
+                        <h3>&#10004; Queen sized bed</h3>
+                        <h3>&#10004; Wide bathroom</h3>
+                        <h3>&#10004; Great Wifi</h3>
+                        <h3>&#10004; Bathtub</h3>
+                        <h3>&#10004; AC</h3>
+                        <h3>&#10004; Large size TV</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1>VhoTel</h1>
+                <h5>CENTRAL JAKARTA</h5>
+            </div>
+            <div class="footer-middle">
+                <div class="f-top">
+                    <h5>MORE INFO</h5>
+                    <p>EMAIL : office@vhotel.com</p>
+                    <p>INSTAGRAM : @vhotelofficial</p>
+                </div>
+                <div class="f-bottom">
+                    <h5>HOTEL AND FACILITIES</h5>
+                    <p>EMAIL : reseption@vhotel.com</p>
+                    <p>CONTACT : +62 810 5678 1234</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="f-top">
+                    <h5>EVENT</h5>
+                    <p>EMAIL : event@vhotel.com</p>
+                    <p>CONTACT : +62 810 7772 3414</p>
+                </div>
+                <div class="f-bottom">
+                    <h5>PRESS</h5>
+                    <p>EMAIL : press@vhotel.com</p>
+                    <p>CONTACT : +62 810 1238 9264</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</html>
